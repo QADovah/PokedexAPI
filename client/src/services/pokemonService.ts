@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Pokemon, CreatePokemonDto } from '../types/pokemon';
 
-const API_URL = 'http://localhost:8000/api/v1/pokemons';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1/pokemons';
 
 const api = axios.create({
     baseURL: API_URL,

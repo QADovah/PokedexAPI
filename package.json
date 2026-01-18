@@ -1,0 +1,24 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Aplicación Full Stack para gestionar una Pokedex personalizada. Construida con tecnologías modernas y enfocada en performance y diseño.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"server\\venv\\Scripts\\python -m uvicorn server.main:app --app-dir . --reload\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QADovah/PokedexAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/QADovah/PokedexAPI/issues"
+  },
+  "homepage": "https://github.com/QADovah/PokedexAPI#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
